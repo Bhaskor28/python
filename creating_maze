@@ -1,0 +1,11 @@
+from pyamaze import maze,agent
+m=maze(5,5)
+
+m.CreateMaze(pattern='v')
+
+
+
+
+
+
+m.run()
