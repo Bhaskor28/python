@@ -9,3 +9,82 @@ m.CreateMaze(pattern='v')
 
 
 m.run()
+
+#another 01
+
+from pyamaze import maze,agent
+m=maze(10,10)
+
+m.CreateMaze(loopPercent=5)
+
+a=agent(m,5,4,filled=True,shape='arrow') # here m must be given...
+print(a.x)
+print(a.y)
+
+
+
+
+m.run()
+
+#another 03
+from pyamaze import maze,agent
+m=maze(40,40)
+
+m.CreateMaze(loopPercent=5)
+
+a=agent(m,footprints=True,shape='arrow')
+#print(a.x)
+#print(a.y)
+b=agent(m,30,30,shape='arrow')
+
+#print(m.maze_map)
+#m.tracePath({a:m.path},delay=10,showMarked=True)
+m.tracePath({b:m.path},delay=100)
+
+
+m.run()
+
+target algorithm:
+
+from pyamaze import,agent
+
+def searchalgo(m):
+	#search algorithm
+	return path
+
+
+
+m=maze(20,30)
+p=searchAlgo(m)
+a=agent(m)
+m.tracePath(a:p)
+
+
+m.run()
+
+
+#another 04
+from pyamaze import maze,agent,textLabel
+m=maze(40,40)
+
+m.CreateMaze(loopPercent=5)
+
+a=agent(m,footprints=True,shape='arrow')
+#print(a.x)
+#print(a.y)
+b=agent(m,30,30,shape='arrow')
+m.enableArrowKey(a)
+m.enableWASD(a)
+print(m.maze_map)
+m.tracePath({a:m.path},delay=1000,showMarked=True)
+
+
+
+l1=textLabel(m,'Total cells',m.rows*m.cols)
+#m.tracePath({b:m.path},delay=100)
+
+
+m.run()
+
+#end
+
