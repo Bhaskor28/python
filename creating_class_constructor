@@ -1,0 +1,17 @@
+class employee:
+    def __init__(self,na,n):
+        self.name=na
+        self.no=n
+
+    def display(self):
+        print(self.name,self.no)
+
+
+
+
+
+
+emp1=employee("john",23)
+emp2=employee("john",24)
+emp1.display()
+emp2.display()
