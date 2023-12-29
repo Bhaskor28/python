@@ -37,3 +37,60 @@ animals=['cat','dog','monkey']
 for animal in animals:
     print(animal)
 
+
+#another 03
+
+
+nums=[0,2,2,6,4]
+square = []
+# if we don't need the index use like this
+
+for x in nums:
+    square.append(x**2)
+print(square)
+#if we need index we should use range
+for x in range(0,5):
+    if x%2==0:
+        square.append(nums[x]**2)
+
+print(square)
+
+#another 04
+#use of dictionary
+d={'person':2,'cat':4,'spider':8}
+
+for animal,legs in d.items():
+    print('A {} has {} lags'.format(animal,legs))
+
+
+#another 05
+''' use of set in python it use for finding an element present or not '''
+
+st={'cat','dog','crocodile'}
+
+'''print('cat' in st)
+print('mesh' in st)
+print(len(st))
+'''
+print(st)
+st.remove('dog')
+st.add('goat')
+for s in st:
+    print(s,end=' ')
+    print(len(s))
+
+
+#another 06
+animals={'cat','dog','fish'}
+
+for idx,animal in enumerate(animals):
+    print('# ',idx+1,' ',animal)
+
+
+#another 07: use of set
+animals={'cat','dog','fish'}
+
+for idx,animal in enumerate(animals):
+    print('# ',idx+1,' ',animal)
+
+
