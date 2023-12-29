@@ -29,3 +29,24 @@ s1=student()
 print(s1)
 
 
+#another 03:
+#class
+
+class greeter:
+
+    def __init__(self,name):
+        self.name=name
+        print(self.name)
+
+
+    def greet(self):
+        print('hello ',self.name)
+
+
+g=greeter('Fed')
+g.greet()
+g.greet()
+
+
+
+
