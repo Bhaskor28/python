@@ -9,3 +9,31 @@ for i in range(0,n):
     ele=int(input())
     lst.append(ele)
 print(lst)
+
+
+#other 01
+
+
+hell='ami tomar'
+print(len(hell))
+print(hell.capitalize())
+print(hell.upper())
+print(hell.rjust(3))
+print(hell.replace('m','(ell)'))
+print(hell.center(3))
+print(hell)
+
+xs=[3,1,2]
+#print(xs,xs[2]
+xs[1]='foo'
+print(xs[-1])
+
+print(xs)
+x=xs.pop()
+print(x)
+
+animals=['cat','dog','monkey']
+
+for animal in animals:
+    print(animal)
+
