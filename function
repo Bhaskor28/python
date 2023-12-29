@@ -1,0 +1,23 @@
+# function
+
+def sign(x):
+    if x<0:
+        return 'negative'
+    elif x==0:
+        return 'zero'
+    else:
+        return 'positive'
+
+
+
+
+n=int(input('enter the size'))
+li=[]
+
+for i in range(0,n):
+    el=int(input('ele'))
+    li.append(el)
+print(li)
+
+for i in li:
+    print(sign(i))
